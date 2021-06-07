@@ -15,7 +15,7 @@ bot.listen('/', process.env.PORT, () => {
   console.log('機器人啟動s111')
 })
 
-bot.on('message', async event => {
+bot.on('message', async (event) => {
   console.log(event.message.type)
   if (event.message.type === 'text') {
     try {
